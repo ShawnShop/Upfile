@@ -34,13 +34,7 @@ CREATE TABLE IF NOT EXISTS documents (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- ==============================================================================
--- Dữ liệu mẫu (Seed Data)
--- Tài khoản Admin:
---   - Email / Username : admin@kbase.team (hoặc 'admin')
---   - Mật khẩu         : admin (mã hóa BCrypt: $2a$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa)
--- Các tài khoản còn lại: mật khẩu là password123
--- ==============================================================================
+
 INSERT INTO users (email, password_hash, full_name, role, avatar_url)
 VALUES 
     ('admin@kbase.team', '$2a$10$vI8aWBnW3fID.ZQ4/zo1G.q1lRps.9cGLcZEiGDMVr5yUP1KUOYTa', 'System Admin', 'ADMIN', 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80'),
