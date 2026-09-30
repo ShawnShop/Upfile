@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Production build artifacts
+dist/
+frontend/dist/
+target/
+backend/target/
+
+# Environment & Secrets (Không đưa key nhạy cảm lên Git)
+.env
+frontend/.env
+*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# IDE & System
+.idea/
+.vscode/
+*.suo
+*.sw?
+.DS_Store
+Thumbs.db
+
+# TypeScript Cache
+*.tsbuildinfo
+frontend/tsconfig.tsbuildinfo
